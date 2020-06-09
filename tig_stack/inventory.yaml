@@ -2,9 +2,12 @@
 version: 2
 groups:
   - name: dashboard
-    targets: [ target0 ]
+    targets: 
+    - target0
   - name: agents
-    targets: [ target0, target1 ]
+    targets: 
+    - target0
+    - target1
 config:
   ssh:
     host-key-check: false

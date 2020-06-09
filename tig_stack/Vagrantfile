@@ -10,7 +10,7 @@ Vagrant.configure(TARGETS) do |config|
   TARGETS.times do |i|
     config.vm.define "target#{i}" do |target|
       target.vm.hostname = "target#{i}"
-      target.vm.network :private_network, ip: "10.0.0.#{100 + i}"
+      target.vm.network :private_network, ip: "10.1.0.#{100 + i}"
     end
   end
 end

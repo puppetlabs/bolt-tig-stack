@@ -6,10 +6,10 @@ plan tig() {
     include tig::dashboard
   }
 
-  $dashboard_host = get_targets('dashboard')[0].name
+  $dashboard_host = get_target('dashboard').name
 
   apply('agents') {
-    class{ tig::telegraf:
+    class{ 'tig::telegraf':
       influx_host => $dashboard_host
     }
   }
