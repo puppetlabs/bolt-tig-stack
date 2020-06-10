@@ -14,5 +14,5 @@ plan tig() {
     }
   }
 
-  return('grafana_dashboard' => "http://${dashboard_host}:8080")
+  return("Dashboard is live on ${dashboard_host}. Go to http://10.1.0.100:8080 to access your dashboard")
 }
