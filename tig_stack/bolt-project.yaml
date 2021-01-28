@@ -1,3 +1,8 @@
 name: tig
 plans:
 - tig 
+
+modules:
+  - puppet-grafana
+  - quadriq-influxdb
+  - puppet-telegraf
